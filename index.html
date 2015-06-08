@@ -46,7 +46,7 @@
     <footer id="footer" class="m-footer">
       <div class="row">
         <div class="m-footer--copyright left">
-          <p class="text-white no-margin">Copyright © 2015 DreamBeach</p>
+          <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
         </div>
         <ul class="m-socials--list">
           <li class="m-socials--item"><a href="#" class="icon-facebook"></a></li>
@@ -56,5 +56,19 @@
       </div>
     </footer>
     <script src="js/bundle.js"></script>
+    <script src="js/validator.js"></script>
+    <script language="JavaScript">
+      function init() {
+      // other functions...
+        getCopyrightYear();
+      }
+
+      function getCopyrightYear() {
+        var d = new Date();
+        var thisYear = d.getFullYear();
+        document.getElementById("copyright_year").innerHTML = thisYear;
+        }
+        window.onload = init;
+    </script>
   </body>
 </html>

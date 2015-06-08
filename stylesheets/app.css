@@ -9305,11 +9305,10 @@ _::full-page-media, _:future,
 
 .m-socials--item {
   float: left;
-  margin: 0 5px;
+  margin: 0 5px 0 29px;
   display: inline-block; }
   .m-socials--item a {
     vertical-align: bottom; }
-
 .icon-facebook, .icon-twitter, .icon-youtube, .icon-instagram {
   width: 35px;
   height: 35px;
@@ -9326,7 +9325,16 @@ _::full-page-media, _:future,
 
 .icon-instagram {
   background-image: url("../images/icons/icon-instagram.png"); }
-
+.alert {
+  position: absolute;
+  content: "";
+  top: 230px;
+  }
+.m-forms {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 1.875rem;
+}
 .m-forms textarea {
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.75) !important; }
