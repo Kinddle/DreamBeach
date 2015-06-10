@@ -6,6 +6,7 @@
     <title>Foundation</title>
     <link rel="stylesheet" href="./stylesheets/app.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
   <body id="contact">
     <div class="l-container--main">
@@ -36,32 +37,31 @@
           <h1 class="text-huge text-light">Contact</h1>
           <h2 class="text-light">Unit B200, The Old Biscuit Mill, 373 Albert Road, </br> Woodstock, CT, 7925</h2>
           <div class="l-container--small">
-            <div class="l-box--medium round bg-dark--light">
+            <div class="l-box--medium round bg-dark--light no-margin">
               <div class="large-6 columns">
-                <form class="m-forms" action="" method="post" novalidate>
-                  <div class="item">
-                    <textarea required="required" name='message' placeholder="Your message" style="min-height: 100px" class="round"></textarea>
+                <form action="MAILTO:infos@thedreambeach.com" method="post" enctype="text/plain" autocomplete="off" class="m-forms" data-abide>
+                  <div class="name-field">
+                    <input class="round left" type="text" required pattern="[a-zA-Z]+" name="name" placeholder="Name">
+                    <small class="error">Name is required and must be a string.</small>
                   </div>
-                  <div class="item">
-                    <input name="email" type="email" required="required" placeholder="Email" class="email round">
+                  <div class="email-field">
+                    <input type="email" placeholder="Email" required>
+                    <small class="error">An email address is required.</small>
                   </div>
-                  <div class="item">
-                    <input type="text" placeholder="Name" style="width: 70%" class="round left">
-                    <button type="submit" class="m-button red right">Submit</button>
+                  <div class="textarea-field">
+                    <textarea name='message' placeholder="Your message" style="min-height: 100px" class="round" required></textarea>
+                    <small class="error">This field is required.</small>
                   </div>
-                  
+                  <button class="right" type="submit">Submit</button>
                 </form>
-                <div class="l-container--tiny text-left">
-                 <!--  <p>All field are required!</p> -->
-                </div>
               </div>
               <div class="large-6 columns text-left">
-                <div class="large-6 columns no-margin text-white">
+                <div class="large-6 columns text-white">
                   <p class="text-light">Email</p>
-                  <p class="text-bold"><a href="meilto:hi@dreambeach.com" class="text-white">hi@dreambeach.com</a></p>
+                  <p class="text-bold"><a href="meilto:hi@dreambeach.com" class="text-white"> infos@thedreambeach.com</a></p>
                   <div class="l-container--smaller">
                     <p class="text-light">Phone</p>
-                    <p class="text-bold">+1 718 333 0006</p>
+                    <p class="text-bold">+299 61 326 926</p>
                   </div>
                   <div class="l-container--smaller">
                     <p class="text-light">Follow Us:</p>
@@ -70,7 +70,9 @@
                     <p class="text-bold"><a href="#" class="text-white">Google+</a></p>
                   </div>
                 </div>
-                <div class="large-6 columns"><img src="images/bg-map.jpg" class="round"></div>
+                <div class="large-6 columns">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3965.361417637799!2d2.3869550000000004!3d6.347225000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjAnNTAuMCJOIDLCsDIzJzEzLjAiRQ!5e0!3m2!1sen!2sus!4v1433937440617" width="197" height="253" frameborder="0" style="border:0"></iframe>
+                </div>
               </div>
             </div>
           </div>
@@ -83,14 +85,14 @@
           <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
         </div>
         <ul class="m-socials--list">
-          <li class="m-socials--item"><a href="#" class="icon-facebook"></a></li>
+          <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
           <li class="m-socials--item"><a href="#" class="icon-twitter"></a></li>
-          <li class="m-socials--item"><a href="#" class="icon-instagram"></a></li>
+          <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
+" class="icon-instagram"></a></li>
         </ul>
       </div>
     </footer>
     <script src="js/bundle.js"></script>
-    <script src="js/validator.js"></script>
     <script language="JavaScript">
       function init() {
       // other functions...
@@ -103,37 +105,6 @@
         document.getElementById("copyright_year").innerHTML = thisYear;
         }
         window.onload = init;
-    </script>
-    <script>
-    // initialize the validator function
-    validator.message['date'] = 'not a real date';
-
-    // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
-    $('form')
-      .on('blur', 'input[required], input.optional, select.required', validator.checkField)
-      .on('change', 'select.required', validator.checkField)
-      .on('keypress', 'input[required][pattern]', validator.keypress);
-
-    $('.multi.required')
-      .on('keyup blur', 'input', function(){
-        validator.checkField.apply( $(this).siblings().last()[0] );
-      });
-
-    // bind the validation to the form submit event
-    //$('#send').click('submit');//.prop('disabled', true);
-
-    $('form').submit(function(e){
-      e.preventDefault();
-      var submit = true;
-      // evaluate the form using generic validaing
-      if( !validator.checkAll( $(this) ) ){
-        submit = false;
-      }
-
-      if( submit )
-        this.submit();
-      return false;
-    });
     </script>
   </body>
 </html>

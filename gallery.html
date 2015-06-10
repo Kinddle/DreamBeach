@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation</title>
     <link rel="stylesheet" href="./stylesheets/app.css">
+    <link rel="stylesheet" href="bower_components/PrettyPhoto/css/prettyPhoto.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   </head>
   <body id="gallery">
@@ -34,7 +36,18 @@
       <div class="row">
         <div class="l-container">
           <div class="l-box--small bg-dark">
-            <div id="scrollable" class="text-white text-center">
+            <div class="text-white text-center gallery-left-block">
+              <!-- <ul class="gallery clearfix gallery-list gallery-left-block">
+                <li class="img-wrapper">
+                  <a href="images/content/gallery_1.jpg" rel="prettyPhoto[pp_gal]" title=""><img src="images/content/gallery_1.jpg" alt="" /></a>
+                </li>
+                <li class="img-wrapper">
+                  <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img src="images/content/gallery2.jpg" alt="" /></a>
+                </li>
+                <li class="img-wrapper">
+                  <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img src="images/content/gallery3.jpg" alt="" /></a>
+                </li>
+              </ul> -->
               <div class="img-wrapper"><img src="images/content/gallery1.jpg"></div>
               <p>It was White & Silver</p>
               <div class="img-wrapper"><img src="images/content/gallery2.jpg"></div>
@@ -56,7 +69,45 @@
             <div id="scrollable_horizontal">
               <div id="sectionwrapper" class="text-white">
                 <section>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
+                  <div class="gallery clearfix gallery-list">
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
+                    </div>
+                    <div class="large-4 medium-6 columns">
+                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
+                    </div>
+                  </div>
+                  <!-- <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
@@ -67,7 +118,7 @@
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
+                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div> -->
                 </section>
                 <section>
                   <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
@@ -95,14 +146,17 @@
           <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
         </div>
         <ul class="m-socials--list">
-          <li class="m-socials--item"><a href="#" class="icon-facebook"></a></li>
+          <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
           <li class="m-socials--item"><a href="#" class="icon-twitter"></a></li>
-          <li class="m-socials--item"><a href="#" class="icon-instagram"></a></li>
+          <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
+" class="icon-instagram"></a></li>
         </ul>
       </div>
     </footer>
     <script src="js/bundle.js"></script>
-    <script language="JavaScript">
+    <script src="bower_components/PrettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script>
+    $(document).ready(function(){
       function init() {
       // other functions...
         getCopyrightYear();
@@ -114,6 +168,91 @@
         document.getElementById("copyright_year").innerHTML = thisYear;
         }
         window.onload = init;
+        if($('.gallery-list').length) {$("a[rel^='prettyPhoto']").prettyPhoto({
+        animation_speed: 'fast', /* fast/slow/normal */
+        slideshow: 5000, /* false OR interval time in ms */
+        autoplay_slideshow: false, /* true/false */
+        opacity: 0.80, /* Value between 0 and 1 */
+        show_title: true, /* true/false */
+        allow_resize: true, /* Resize the photos bigger than viewport. true/false */
+        default_width: 500,
+        default_height: 344,
+        counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
+        theme: 'pp_default', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
+        horizontal_padding: 20, /* The padding on each side of the picture */
+        hideflash: false, /* Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto */
+        wmode: 'opaque', /* Set the flash wmode attribute */
+        autoplay: true, /* Automatically start videos: True/False */
+        modal: false, /* If set to true, only the close button will close the window */
+        deeplinking: true, /* Allow prettyPhoto to update the url to enable deeplinking. */
+        overlay_gallery: true, /* If set to true, a gallery will overlay the fullscreen image on mouse over */
+        keyboard_shortcuts: true, /* Set to false if you open forms inside prettyPhoto */
+        changepicturecallback: function(){}, /* Called everytime an item is shown/changed */
+        callback: function(){}, /* Called when prettyPhoto is closed */
+        ie6_fallback: true,
+        markup: '<div class="pp_pic_holder"> \
+              <div class="ppt">&nbsp;</div> \
+              <div class="pp_top"> \
+                <div class="pp_left"></div> \
+                <div class="pp_middle"></div> \
+                <div class="pp_right"></div> \
+              </div> \
+              <div class="pp_content_container"> \
+                <div class="pp_left"> \
+                <div class="pp_right"> \
+                  <div class="pp_content"> \
+                    <div class="pp_loaderIcon"></div> \
+                    <div class="pp_fade"> \
+                      <a href="#" class="pp_expand" title="Expand the image">Expand</a> \
+                      <div class="pp_hoverContainer"> \
+                        <a class="pp_next" href="#">next</a> \
+                        <a class="pp_previous" href="#">previous</a> \
+                      </div> \
+                      <div id="pp_full_res"></div> \
+                      <div class="pp_details"> \
+                        <div class="pp_nav"> \
+                          <a href="#" class="pp_arrow_previous">Previous</a> \
+                          <p class="currentTextHolder">0/0</p> \
+                          <a href="#" class="pp_arrow_next">Next</a> \
+                        </div> \
+                        <p class="pp_description"></p> \
+                        {pp_social} \
+                        <a class="pp_close" href="#">Close</a> \
+                      </div> \
+                    </div> \
+                  </div> \
+                </div> \
+                </div> \
+              </div> \
+              <div class="pp_bottom"> \
+                <div class="pp_left"></div> \
+                <div class="pp_middle"></div> \
+                <div class="pp_right"></div> \
+              </div> \
+            </div> \
+            <div class="pp_overlay"></div>',
+        gallery_markup: '<div class="pp_gallery"> \
+                  <a href="#" class="pp_arrow_previous">Previous</a> \
+                  <div> \
+                    <ul> \
+                      {gallery} \
+                    </ul> \
+                  </div> \
+                  <a href="#" class="pp_arrow_next">Next</a> \
+                </div>',
+        image_markup: '<img id="fullResImage" src="{path}" />',
+        flash_markup: '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="{width}" height="{height}"><param name="wmode" value="{wmode}" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="{path}" /><embed src="{path}" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="{width}" height="{height}" wmode="{wmode}"></embed></object>',
+        quicktime_markup: '<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab" height="{height}" width="{width}"><param name="src" value="{path}"><param name="autoplay" value="{autoplay}"><param name="type" value="video/quicktime"><embed src="{path}" height="{height}" width="{width}" autoplay="{autoplay}" type="video/quicktime" pluginspage="http://www.apple.com/quicktime/download/"></embed></object>',
+        iframe_markup: '<iframe src ="{path}" width="{width}" height="{height}" frameborder="no"></iframe>',
+        inline_markup: '<div class="pp_inline">{content}</div>',
+        custom_markup: '',
+        // 
+      });
+
+  }
+
+      });
     </script>
+
   </body>
 </html>
