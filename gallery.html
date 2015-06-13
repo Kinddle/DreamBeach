@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/jPages.css">
+    <link rel="stylesheet" href="./stylesheets/jquery.simplyscroll.css">
     <link rel="stylesheet" href="./stylesheets/app.css">
     <link rel="stylesheet" href="bower_components/PrettyPhoto/css/prettyPhoto.css">
-
+    <link rel="stylesheet" href="./stylesheets/animate.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   </head>
   <body id="gallery">
-    <div class="l-container--main">
+    <div class="l-container--main no-margin-bottom">
       <div class="row">
         <div class="contain-to-grid">
           <nav data-topbar role="navigation" class="top-bar m-top-bar">
@@ -37,125 +40,325 @@
         <div class="l-container">
           <div class="l-box--small bg-dark">
             <div class="text-white text-center gallery-left-block">
-              <!-- <ul class="gallery clearfix gallery-list gallery-left-block">
-                <li class="img-wrapper">
-                  <a href="images/content/gallery_1.jpg" rel="prettyPhoto[pp_gal]" title=""><img src="images/content/gallery_1.jpg" alt="" /></a>
+              <ul id="scroller">
+                <li id="navItem1" class="img-wrapper"><img class="img-style"src="images/content/gallery1.jpg">
+                  <p>It was White & Silver</p>
                 </li>
-                <li class="img-wrapper">
-                  <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img src="images/content/gallery2.jpg" alt="" /></a>
+                <li id="navItem2" class="img-wrapper"><img class="img-style" src="images/content/gallery2.jpg">
+                  <p>An amazing Summer Season</p>
                 </li>
-                <li class="img-wrapper">
-                  <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img src="images/content/gallery3.jpg" alt="" /></a>
+                <li id="navItem1" class="img-wrapper"><img class="img-style" src="images/content/gallery3.jpg">
+                  <p>Champagne spray parties</p>
                 </li>
-              </ul> -->
-              <div class="img-wrapper"><img src="images/content/gallery1.jpg"></div>
-              <p>It was White & Silver</p>
-              <div class="img-wrapper"><img src="images/content/gallery2.jpg"></div>
-              <p>An amazing Summer Season</p>
-              <div class="img-wrapper"><img src="images/content/gallery3.jpg"></div>
-              <p>Champagne spray parties</p>
-              <div class="img-wrapper"><img src="images/content/gallery1.jpg"></div>
-              <p>Champagne spray parties</p>
-              <div class="img-wrapper"><img src="images/content/gallery2.jpg"></div>
-              <p>An amazing Summer Season</p>
-              <div class="img-wrapper"><img src="images/content/gallery3.jpg"></div>
-              <p>It was White & Silver</p>
-              <div class="img-wrapper"><img src="images/content/gallery1.jpg"></div>
-              <p>It was White & Silver</p>
-              <div class="img-wrapper"><img src="images/content/gallery2.jpg"></div>
-              <p>It was White & Silver</p>
-              <div class="img-wrapper"><img src="images/content/gallery3.jpg"></div>
+                <li id="navItem2" class="img-wrapper"><img class="img-style" src="images/content/gallery1.jpg">
+                  <p>It was White & Silver</p>
+                </li>
+                <li id="navItem1" class="img-wrapper"><img class="img-style" src="images/content/gallery2.jpg">
+                  <p>An amazing Summer Season</p>
+                </li>
+                <li id="navItem2" class="img-wrapper"><img class="img-style" src="images/content/gallery3.jpg">
+                  <p>Champagne spray parties</p>
+                </li>  
+              </ul> 
             </div>
             <div id="scrollable_horizontal">
-              <div id="sectionwrapper" class="text-white">
-                <section>
-                  <div class="gallery clearfix gallery-list">
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery2.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery1.jpg" alt="" /></a>
-                    </div>
-                    <div class="large-4 medium-6 columns">
-                      <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="image-responsive round" src="images/content/gallery3.jpg" alt="" /></a>
-                    </div>
+              <div class="sectionwrapper" class="text-white">
+                <div class="gallery clearfix gallery-list large-12 columns">
+                  <div id="content-wrap1">
+                    <ul id="itemContainer">
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/galler2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/galler2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>  
+
+                  <div id="content-wrap2">
+                    <ul id="itemContainer1">
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/galler1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                        <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                      </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery2.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery2.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                       </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/galler1.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery1.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="large-4 medium-6 columns padding-bottom">
+                          <a href="images/content/gallery3.jpg" rel="prettyPhoto[pp_gal]" title=""><img class="round" src="images/content/gallery3.jpg" alt="" /></a>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <!-- <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div> -->
-                </section>
-                <section>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery3.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery2.jpg" class="image-responsive round"></div>
-                  <div class="large-4 medium-6 columns"><img src="images/content/gallery1.jpg" class="image-responsive round"></div>
-                </section>
+                </div>
+                <div class="holder">
+                  <a class="jp-previous jp-disabled">← previous</a>
+                  <a class="jp-current">1</a>
+                  <a href="#" class="">2</a>
+                  <a href="#" class="">3</a>
+                  <a href="#" class="">4</a>
+                  <a href="#" class="">5</a>
+                  <a href="#" class="jp-hidden">6</a>
+                  <a class="jp-next">next →</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer id="footer" class="m-footer">
-      <div class="row">
-        <div class="m-footer--copyright left">
-          <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
+      <footer id="footer" class="m-footer">
+        <div class="row">
+          <div class="m-footer--copyright left">
+            <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
+          </div>
+          <ul class="m-socials--list">
+            <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
+            <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
+  " class="icon-instagram"></a></li>
+          </ul>
         </div>
-        <ul class="m-socials--list">
-          <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
-          <li class="m-socials--item"><a href="#" class="icon-twitter"></a></li>
-          <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
-" class="icon-instagram"></a></li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="js/bundle.js"></script>
     <script src="bower_components/PrettyPhoto/js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.simplyscroll.js"></script>
+    <script src="js/jPages.js"></script>
     <script>
+    (function($) {
+      $(function() { //on DOM ready
+        $("#scroller").simplyScroll({
+          customClass: 'vert',
+          orientation: 'vertical',
+                auto: false,
+                manualMode: 'loop',
+          frameRate: 20,
+          speed: 5
+        });
+      });
+    })(jQuery);
     $(document).ready(function(){
       function init() {
       // other functions...
@@ -248,11 +451,42 @@
         custom_markup: '',
         // 
       });
-
-  }
-
+      }
+      });
+      $(function() {
+        $('[id^="navItem"]').on('click', function() {
+          var
+            id = this.id,
+            num = id.charAt(id.length-1)
+        ;
+        $('[id^="content-wrap"]').hide();
+        $('#content-wrap'+num).fadeIn(1000);
+        });
+    
+        $('#content-wrap1').fadeIn(1000);
+      })
+      $(function(){
+        /* initiate the plugin */
+        $("div.holder").jPages({
+          containerID  : "itemContainer",
+          perPage      : 6,
+          startPage    : 1,
+          startRange   : 1,
+          midRange     : 5,
+          endRange     : 1
+        });
+      });
+      $(function(){
+        /* initiate the plugin */
+        $("div.holder").jPages({
+          containerID  : "itemContainer1",
+          perPage      : 12,
+          startPage    : 1,
+          startRange   : 1,
+          midRange     : 5,
+          endRange     : 1
+        });
       });
     </script>
-
   </body>
 </html>

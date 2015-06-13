@@ -9,7 +9,7 @@
     <script src="https://maps.googleapis.com/maps/api/js"></script>
   </head>
   <body id="contact">
-    <div class="l-container--main">
+    <div class="l-container--main no-margin-bottom">
       <div class="contain-to-grid">
         <div class="row">
           <nav data-topbar role="navigation" class="top-bar m-top-bar">
@@ -41,11 +41,11 @@
               <div class="large-6 columns">
                 <form action="MAILTO:infos@thedreambeach.com" method="post" enctype="text/plain" autocomplete="off" class="m-forms" data-abide>
                   <div class="name-field">
-                    <input class="round left" type="text" required pattern="[a-zA-Z]+" name="name" placeholder="Name">
+                    <input class="round" type="text" required pattern="[a-zA-Z]+" name="name" placeholder="Name">
                     <small class="error">Name is required and must be a string.</small>
                   </div>
                   <div class="email-field">
-                    <input type="email" placeholder="Email" required>
+                    <input class="email" type="email" placeholder="Email" required>
                     <small class="error">An email address is required.</small>
                   </div>
                   <div class="textarea-field">
@@ -78,21 +78,21 @@
           </div>
         </div>
       </div>
-    </div>
-    <footer id="footer" class="m-footer">
-      <div class="row">
-        <div class="m-footer--copyright left">
-          <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
+      <footer id="footer" class="m-footer">
+        <div class="row">
+          <div class="m-footer--copyright left">
+            <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
+          </div>
+          <ul class="m-socials--list">
+            <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
+            <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
+  " class="icon-instagram"></a></li>
+          </ul>
         </div>
-        <ul class="m-socials--list">
-          <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
-          <li class="m-socials--item"><a href="#" class="icon-twitter"></a></li>
-          <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
-" class="icon-instagram"></a></li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="js/bundle.js"></script>
+    <script src="js/validator.js"></script>
     <script language="JavaScript">
       function init() {
       // other functions...

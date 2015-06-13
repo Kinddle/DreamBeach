@@ -1,0 +1,128 @@
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Master button styles - note that left and right 
+versions are included although they are not used in this example */
+
+.simply-scroll-btn {
+	position: absolute;
+	background-image: url(../images/icons/up_down_scroller_btn.png);
+	width: 22px;
+	height: 29px;
+	z-index:3;
+	cursor: pointer;
+}
+.simply-scroll-btn-up:hover {
+	right: 6px;
+	top: 6px;
+	background-position: -23px 0px;
+}	
+/*.simply-scroll-btn-left {
+	left: 6px;
+	bottom: 6px;
+	background-position: 0 15px;
+}
+.simply-scroll-btn-left.disabled {
+	background-position: 0 0 !important;
+}
+.simply-scroll-btn-left:hover {
+	background-position: 0 29px;
+}
+	
+.simply-scroll-btn-right {
+	right: 6px;
+	bottom: 6px;
+	background-position: 84px -44px;
+}
+.simply-scroll-btn-right.disabled {
+	background-position: 84px 0 !important;
+}
+.simply-scroll-btn-right:hover {
+	background-position: 84px -88px;
+}
+	
+.simply-scroll-btn-up {
+	right: 6px;
+	top: 6px;
+	background-position: -126px -44px;
+}
+.simply-scroll-btn-up.disabled {
+	background-position: -126px 0 !important;
+}
+.simply-scroll-btn-up:hover {
+	background-position: -126px -88px;
+}
+	*/
+.simply-scroll-btn-down {
+	right: 6px;
+	bottom: 6px;
+	background-position: 21px 29px;
+}
+/*.simply-scroll-btn-down.disabled {
+	background-position: -42px 0 !important;
+}*/
+.simply-scroll-btn-down:hover {
+	background-position: 0px 29px;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+Vertical scroller example, with custom base class */
+
+/* Container DIV */
+.vert { 
+	width: 340px; /* wider than clip for custom button pos. */
+	height: 400px;
+	margin-bottom: 1.5em;
+}
+
+/* Clip DIV */
+.vert .simply-scroll-clip {
+	width: 290px;
+	height: 400px;
+}
+
+/* Explicitly set height/width of each list item */
+.vert .simply-scroll-list li {
+	width: 290px;
+	height: 200px;
+}
+
+/* Modified button positions, overriding previous styles */
+.vert .simply-scroll-btn-up { 
+	right: 15px;
+	top: 0;
+}
+
+.vert .simply-scroll-btn-down { 
+	right: 15px;
+	bottom: 0;
+}
