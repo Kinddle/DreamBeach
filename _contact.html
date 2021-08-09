@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation</title>
+    <link rel="stylesheet" href="./stylesheets/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+  </head>
+  <body id="contact">
+    <div class="l-container--main no-margin-bottom">
+      <div class="contain-to-grid">
+        <div class="row">
+          <nav data-topbar role="navigation" class="top-bar m-top-bar">
+            <ul class="title-area">
+              <li>
+                <h1><a href="/" class="m-logo"><img src="images/logo.png"></a></h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+            </ul>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li><a href="/index.html" class="m-button red">Home</a></li>
+                <li><a href="/venue.html" class="m-button red">Venue</a></li>
+                <li><a href="/cuisine.html" class="m-button red">Cuisine</a></li>
+                <li><a href="/events.html" class="m-button red">Events</a></li>
+                <li><a href="/gallery.html" class="m-button red">Gallery</a></li>
+                <li><a href="/contact.html" class="m-button red">Contact</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+      <div class="l-container text-center text-white">
+        <div class="row">
+          <h1 class="text-huge text-light">Contact</h1>
+          <h2 class="text-light">Unit B200, The Old Biscuit Mill, 373 Albert Road, </br> Woodstock, CT, 7925</h2>
+          <div class="l-container--small">
+            <div class="l-box--medium round bg-dark--light no-margin">
+              <div class="large-6 columns">
+                <form action="MAILTO:infos@thedreambeach.com" method="post" enctype="text/plain" autocomplete="off" class="m-forms" data-abide>
+                  <div class="name-field">
+                    <input class="round" type="text" required pattern="[a-zA-Z]+" name="name" placeholder="Name">
+                    <small class="error">Name is required and must be a string.</small>
+                  </div>
+                  <div class="email-field">
+                    <input class="email" type="email" placeholder="Email" required>
+                    <small class="error">An email address is required.</small>
+                  </div>
+                  <div class="textarea-field">
+                    <textarea name='message' placeholder="Your message" style="min-height: 100px" class="round" required></textarea>
+                    <small class="error">This field is required.</small>
+                  </div>
+                  <button class="right" type="submit">Submit</button>
+                </form>
+              </div>
+              <div class="large-6 columns text-left">
+                <div class="large-6 columns text-white">
+                  <p class="text-light">Email</p>
+                  <p class="text-bold"><a href="meilto:hi@dreambeach.com" class="text-white"> infos@thedreambeach.com</a></p>
+                  <div class="l-container--smaller">
+                    <p class="text-light">Phone</p>
+                    <p class="text-bold">+299 61 326 926</p>
+                  </div>
+                  <div class="l-container--smaller">
+                    <p class="text-light">Follow Us:</p>
+                    <p class="text-bold"><a href="#" class="text-white">Facebook</a></p>
+                    <p class="text-bold"><a href="#" class="text-white">Twitter</a></p>
+                    <p class="text-bold"><a href="#" class="text-white">Google+</a></p>
+                  </div>
+                </div>
+                <div class="large-6 columns">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3965.361417637799!2d2.3869550000000004!3d6.347225000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjAnNTAuMCJOIDLCsDIzJzEzLjAiRQ!5e0!3m2!1sen!2sus!4v1433937440617" width="197" height="253" frameborder="0" style="border:0"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer" class="m-footer">
+        <div class="row">
+          <div class="m-footer--copyright left">
+            <p class="text-white no-margin">Copyright © <span id="copyright_year">2015</span> DreamBeach</p>
+          </div>
+          <ul class="m-socials--list">
+            <li class="m-socials--item"><a href="https://www.facebook.com/pages/Dream-Beach/614575881936631" class="icon-facebook"></a></li>
+            <li class="m-socials--item"><a href="http://i.instagram.com/dreambeachctn/
+  " class="icon-instagram"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="js/bundle.js"></script>
+    <script src="js/validator.js"></script>
+    <script language="JavaScript">
+      function init() {
+      // other functions...
+        getCopyrightYear();
+      }
+
+      function getCopyrightYear() {
+        var d = new Date();
+        var thisYear = d.getFullYear();
+        document.getElementById("copyright_year").innerHTML = thisYear;
+        }
+        window.onload = init;
+    </script>
+  </body>
+</html>
